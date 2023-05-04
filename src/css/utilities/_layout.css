@@ -1,0 +1,79 @@
+/*
+    The flow class is very particular. 
+    
+    It's intended use is for stacked elements that need consistent vertical 
+    spacing but are not arranged or are not able to be arranged within a 
+    flexbox or grid layout. When used in this case, we can provide consistent 
+    spacing to all of the stacked elements, barring the first-child of 
+    the parent element.
+*/
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+/*
+        Apply the base utility class to give grid functionality.
+        Apply a data-attribute modifier to give further styling instructions.
+    */
+
+/* base utility class */
+.grid {
+  display: grid;
+  grid-gap: var(--grid-gap, 1.5rem);
+}
+
+/* data-attribute modifiers */
+.grid[data-type="auto-fit"] {
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+
+.grid[data-type="items-center"] {
+  place-items: center;
+}
+
+.grid[data-type="content-center"] {
+  place-content: center;
+}
+
+@media screen and (min-width: 45em) {
+  .grid[type="even-columns"] {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/*
+        Apply the base utility class to give flex functionality.
+        Apply a data-attribute modifier to give further styling instructions.
+    */
+
+/* base utility class */
+.flex {
+  display: flex;
+  column-gap: var(--flex-column-gap, --flex-group-gap);
+  row-gap: var(--flex-row-gap, calc(var(--flex-group-gap) / 2));
+  width: fit-content;
+}
+
+/* data-attribute modifiers */
+.flex[data-direction="column"] {
+  flex-direction: column;
+}
+
+.flex[data-direction="row"] {
+  flex-direction: row;
+}
+
+.flex[data-type="full-center"] {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex[data-type="align-center"] {
+  align-items: center;
+}
+
+.flex[data-type="justify-center"] {
+  justify-content: center;
+}

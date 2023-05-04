@@ -1,0 +1,147 @@
+@import "base/index.css";
+@import "utilities/index.css";
+@import "vendor/index.css";
+
+:root {
+  /* ======================= */
+  /* #region Semantic tokens */
+  /*
+          These tokens should consume the global variables as their values and then be
+          consumed themselves by the further below contextual tokens.
+    */
+
+  /* colors */
+  --color-primary-100: var(--clr-blue-light);
+  --color-primary-300: var(--clr-blue-medium-light);
+  --color-primary-400: var(--clr-blue);
+  --color-primary-600: var(--clr-blue-medium-dark);
+  --color-primary-900: var(--clr-blue-dark);
+
+  --color-neutral-100: var(--clr-white);
+  --color-neutral-300: var(--clr-gray-dark);
+  --color-neutral-400: var(--clr-gray);
+  --color-neutral-600: var(--clr-gray-light);
+  --color-neutral-700: var(--clr-gray-extra-light);
+  --color-neutral-900: var(--clr-black);
+
+  --color-supporting-900: var(--clr-green-dark);
+  --color-supporting-300: var(--clr-green-light);
+
+  --color-supporting-800: var(--clr-yellow-dark);
+  --color-supporting-200: var(--clr-yellow-light);
+
+  --color-supporting-700: var(--clr-red-dark);
+  --color-supporting-100: var(--clr-red-light);
+
+  /* font family */
+  --font-family-base: var(--ff-sans);
+  --font-family-accent: var(--ff-serif);
+
+  /* font sizes */
+  --font-size-400: var(--fs-400);
+  --font-size-500: var(--fs-500);
+  --font-size-600: var(--fs-600);
+  --font-size-700: var(--fs-700);
+  --font-size-800: var(--fs-800);
+  --font-size-900: var(--fs-900);
+
+  /* font weights */
+  --font-weight-regular: var(--fw-400);
+  --font-weight-bold: var(--fw-700);
+
+  /* letter spacing */
+  --letter-spacing-regular: var(--ls-400);
+  --letter-spacing-loose: var(--ls-700);
+  --letter-spacing-condensed: var(--ls-200);
+
+  /* line height */
+  --line-height-short: var(--lh-200);
+  --line-height-regular: var(--lh-400);
+  --line-height-tall: var(--lh-800);
+
+  /* sizing[type="fixed"] */
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-7: 1.75rem;
+  --size-8: 2rem;
+  --size-9: 2.5rem;
+  --size-10: 3rem;
+  --size-11: 4rem;
+  --size-12: 5rem;
+  --size-13: 6rem;
+  --size-14: 8rem;
+  --size-15: 10rem;
+  --size-16: 12rem;
+
+  /* sizing[type="fluid"] */
+  --size-fluid-1: clamp(var(--size-2), 2vw, var(--size-4));
+  --size-fluid-2: clamp(var(--size-4), 4vw, var(--size-6));
+  --size-fluid-3: clamp(var(--size-6), 6vw, var(--size-8));
+  --size-fluid-4: clamp(var(--size-8), 8vw, var(--size-10));
+  --size-fluid-5: clamp(var(--size-10), 10vw, var(--size-12));
+  --size-fluid-6: clamp(var(--size-12), 12vw, var(--size-14));
+  --size-fluid-7: clamp(var(--size-14), 14vw, var(--size-16));
+
+  /* #endregion */
+  /* ======================= */
+
+  /* ========================= */
+  /* #region Contextual Tokens */
+  /*
+          These tokens consume the above "Semantic tokens." These tokens then become
+          the custom properties we should be using within our actual styling of the application.
+  
+          By keeping these tokens component-scoped (at least in our naming scheme) we can create
+          sets of tokens that are powerful in nature while retaining simplicity of use.
+    */
+
+  /* general tokens */
+  --color-background-default: var(--color-neutral-100);
+  --color-text-default: var(--color-neutral-900);
+
+  --color-background-inversed: var(--color-neutral-100);
+  --color-text-inversed: var(--color-neutral-900);
+
+  --color-text-interactive-default: var(--color-primary-600);
+  --color-text-interactive-hover: var(--color-primary-900);
+
+  /* body tokens */
+  --body-background-color: var(--color-background-default);
+  --body-text-color: var(--color-text-default);
+
+  --body-font-family: var(--font-family-base);
+  --body-font-weight: var(--font-weight-regular);
+  --body-font-size: var(--font-size-400);
+
+  --body-line-height: var(--line-height-regular);
+
+  --link-color: var(--color-text-interactive-default);
+  --link-color-hover: var(--color-text-interactive-hover);
+
+  /* layout tokens */
+  --grid-gap: var(--size-6);
+  --flex-group-gap: var(--size-4);
+
+  /* spacing tokens */
+  --section-padding-block: var(--size-4);
+  --section-padding-inline: 0;
+
+  /* container tokens */
+  --container-max-width: 60rem;
+  --container-max-width-narrow: 40rem;
+  --container-max-width-wide: 75rem;
+
+  --container-inline-padding: var(--size-4);
+  --container-min-margin-inline: var(--size-4);
+
+  /* #endregion */
+  /* ========================= */
+}
+
+.main {
+  min-height: 20rem;
+}

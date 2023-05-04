@@ -1,0 +1,43 @@
+/*
+  This file is dedicated to media queries that will read user preferences (when available)
+  and update the application based on those preferences (if they have been set).
+*/
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Modify color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-default: var(--color-neutral-100);
+    --color-text-default: var(--color-primary-400);
+
+    --color-background-inversed: var(--color-primary-400);
+    --color-text-inversed: var(--color-neutral-100);
+
+    --color-text-interactive-default: var(--color-accent-500);
+    --color-text-interactive-hover: var(--color-accent-400);
+  }
+}
+
+/* Update contrast */
+@media (prefers-contrast: more) {
+  /* Impose higher contrast color-values */
+}
+
+@media (prefers-contrast: less) {
+  /* Impose lower contrast color-values */
+}

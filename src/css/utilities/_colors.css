@@ -1,0 +1,223 @@
+/*
+    A collection of utility classes that will modify background-colors
+    and text-colors based on our defined variable tokens from the
+    main.css file.
+*/
+
+/* background-colors */
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--color-primary-200);
+}
+
+.bg-primary-300 {
+  background-color: var(--color-primary-300);
+}
+
+.bg-primary-400 {
+  background-color: var(--color-primary-400);
+}
+
+.bg-primary-500 {
+  background-color: var(--color-primary-500);
+}
+
+.bg-primary-600 {
+  background-color: var(--color-primary-600);
+}
+
+.bg-primary-700 {
+  background-color: var(--color-primary-700);
+}
+
+.bg-primary-800 {
+  background-color: var(--color-primary-800);
+}
+
+.bg-primary-900 {
+  background-color: var(--color-primary-900);
+}
+
+.bg-neutral-100 {
+  background-color: var(--color-neutral-100);
+}
+
+.bg-neutral-200 {
+  background-color: var(--color-neutral-200);
+}
+
+.bg-neutral-300 {
+  background-color: var(--color-neutral-300);
+}
+
+.bg-neutral-400 {
+  background-color: var(--color-neutral-400);
+}
+
+.bg-neutral-500 {
+  background-color: var(--color-neutral-500);
+}
+
+.bg-neutral-600 {
+  background-color: var(--color-neutral-600);
+}
+
+.bg-neutral-700 {
+  background-color: var(--color-neutral-700);
+}
+
+.bg-neutral-800 {
+  background-color: var(--color-neutral-800);
+}
+
+.bg-neutral-900 {
+  background-color: var(--color-neutral-900);
+}
+
+.bg-accent-100 {
+  background-color: var(--color-accent-100);
+}
+
+.bg-accent-200 {
+  background-color: var(--color-accent-200);
+}
+
+.bg-accent-300 {
+  background-color: var(--color-accent-300);
+}
+
+.bg-accent-400 {
+  background-color: var(--color-accent-400);
+}
+
+.bg-accent-500 {
+  background-color: var(--color-accent-500);
+}
+
+.bg-accent-600 {
+  background-color: var(--color-accent-600);
+}
+
+.bg-accent-700 {
+  background-color: var(--color-accent-700);
+}
+
+.bg-accent-800 {
+  background-color: var(--color-accent-800);
+}
+
+.bg-accent-900 {
+  background-color: var(--color-accent-900);
+}
+
+/* colors */
+.clr-primary-100 {
+  background-color: var(--color-primary-100);
+}
+
+.clr-primary-200 {
+  background-color: var(--color-primary-200);
+}
+
+.clr-primary-300 {
+  background-color: var(--color-primary-300);
+}
+
+.clr-primary-400 {
+  background-color: var(--color-primary-400);
+}
+
+.clr-primary-500 {
+  background-color: var(--color-primary-500);
+}
+
+.clr-primary-600 {
+  background-color: var(--color-primary-600);
+}
+
+.clr-primary-700 {
+  background-color: var(--color-primary-700);
+}
+
+.clr-primary-800 {
+  background-color: var(--color-primary-800);
+}
+
+.clr-primary-900 {
+  background-color: var(--color-primary-900);
+}
+
+.clr-neutral-100 {
+  background-color: var(--color-neutral-100);
+}
+
+.clr-neutral-200 {
+  background-color: var(--color-neutral-200);
+}
+
+.clr-neutral-300 {
+  background-color: var(--color-neutral-300);
+}
+
+.clr-neutral-400 {
+  background-color: var(--color-neutral-400);
+}
+
+.clr-neutral-500 {
+  background-color: var(--color-neutral-500);
+}
+
+.clr-neutral-600 {
+  background-color: var(--color-neutral-600);
+}
+
+.clr-neutral-700 {
+  background-color: var(--color-neutral-700);
+}
+
+.clr-neutral-800 {
+  background-color: var(--color-neutral-800);
+}
+
+.clr-neutral-900 {
+  background-color: var(--color-neutral-900);
+}
+
+.clr-accent-100 {
+  background-color: var(--color-accent-100);
+}
+
+.clr-accent-200 {
+  background-color: var(--color-accent-200);
+}
+
+.clr-accent-300 {
+  background-color: var(--color-accent-300);
+}
+
+.clr-accent-400 {
+  background-color: var(--color-accent-400);
+}
+
+.clr-accent-500 {
+  background-color: var(--color-accent-500);
+}
+
+.clr-accent-600 {
+  background-color: var(--color-accent-600);
+}
+
+.clr-accent-700 {
+  background-color: var(--color-accent-700);
+}
+
+.clr-accent-800 {
+  background-color: var(--color-accent-800);
+}
+
+.clr-accent-900 {
+  background-color: var(--color-accent-900);
+}

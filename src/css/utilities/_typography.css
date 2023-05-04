@@ -1,0 +1,74 @@
+/*
+    A collection of utility classes that will modify font families, sizes, and weights
+    based on our variable tokens from the main.css file. This stylesheet also provides us
+    with a few classes for text transformations.
+*/
+
+/* font families */
+.ff-base {
+  font-family: var(--font-family-base);
+}
+
+.ff-accent {
+  font-family: var(--font-family-accent);
+}
+
+/* font sizes */
+.fs-400 {
+  font-size: var(--font-size-400);
+}
+
+.fs-500 {
+  font-size: var(--font-size-500);
+}
+
+.fs-600 {
+  font-size: var(--font-size-600);
+}
+
+.fs-700 {
+  font-size: var(--font-size-700);
+}
+
+.fs-800 {
+  font-size: var(--font-size-800);
+}
+
+.fs-900 {
+  font-size: var(--font-size-900);
+}
+
+/* font weights */
+.fw-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* text align */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* text transform */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

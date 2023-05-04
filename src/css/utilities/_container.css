@@ -1,0 +1,24 @@
+/*
+    A collection of container (wrapper) utility classes with data-attribute 
+    modifiers to help us create consistent containers throughout the app.
+*/
+
+.container {
+  --padding: calc(var(--container-min-margin-inline) * 2);
+  --max-width: var(--container-max-width);
+
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+.container[data-type="narrow"] {
+  --max-width: var(--container-max-width-narrow);
+}
+
+.container[data-type="wide"] {
+  --max-width: var(--container-max-width-wide);
+}
+
+.container[data-type="full-bleed"] {
+  --max-width: 100%;
+}
