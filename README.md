@@ -12,7 +12,7 @@ Of course, there are numerous ways to solve problems. Especially with programmin
 
 We can leverage the functionality of custom properties to create an abstract system that allows us to make application-wide changes in a matter of minutes.
 
-There are three total layers to this system: The global layer, the variable layer, and the contextual layer. For the remainder of this section I will refer to custom properties as tokens.
+There are three total layers to this system: The global layer, the semantic layer, and the contextual layer. For the remainder of this section I will refer to custom properties as tokens.
 
 We define these tokens all within the same selector, the :root {} selector. When discussing tokens we can consider the :root {} element to be a "global" selector of sorts, as any token defined within that element will cascade throughout our application.
 
@@ -32,7 +32,7 @@ We define these tokens all within the same selector, the :root {} selector. When
 }
 ```
 
-You may be wondering: Why add the variable layer? Why not just assign the global tokens to the contextual tokens. What's the point of this extra step?
+You may be wondering: Why add the semantic layer? Why not just assign the global tokens to the contextual tokens. What's the point of this extra step?
 
 This is so we don't end up in a situation like this should the design specs change:
 
@@ -48,7 +48,7 @@ This is so we don't end up in a situation like this should the design specs chan
 
 Now our naming convention wouldn't make much sense anymore, would it?
 
-Our variable token layer allows us to define as many global variables as we want and swap them out as values within the variable layer. The semantic tokens are then assigned to our contextual tokens, which can also be considered component tokens.
+Our semantic token layer allows us to define as many global variables as we want and swap them out as values within the semantic layer. The semantic tokens are then assigned to our contextual tokens, which can also be considered component tokens.
 
 By having these three layers we can maximize our control while retaining a level of simplicity that managing the application is still quite easy.
 
